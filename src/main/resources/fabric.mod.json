@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "lazarus",
+  "version": "${version}",
+
+  "name": "Lazarus",
+  "description": "1.18.1 utility mod for the goblins of phoenixanarchy.com",
+  "authors": [
+    "spicy98"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/lazarus/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "spicy.lazarus.Lazarus"
+    ]
+  },
+  "mixins": [
+    "lazarus.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
