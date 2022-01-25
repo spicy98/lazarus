@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import spicy.lazarus.Lazarus;
-import spicy.lazarus.events.packets.PacketEvent;
+import spicy.lazarus.event.packets.PacketEvent;
 
 @Mixin(ClientConnection.class)
 public class ClientConnectionMixin {

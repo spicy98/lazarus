@@ -9,8 +9,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import spicy.lazarus.commands.Command;
-import spicy.lazarus.commands.CommandManager;
+import spicy.lazarus.command.Command;
+import spicy.lazarus.command.CommandManager;
 
 @Mixin(ClientPlayerEntity.class)
 public class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {

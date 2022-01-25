@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import spicy.lazarus.Lazarus;
-import spicy.lazarus.events.client.KeyEvent;
+import spicy.lazarus.event.client.KeyEvent;
 
 @Mixin(Keyboard.class)
 public abstract class KeyboardMixin {

@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import spicy.lazarus.Lazarus;
-import spicy.lazarus.events.client.Render2DEvent;
+import spicy.lazarus.event.client.Render2DEvent;
 
 @Mixin(InGameHud.class)
 public class InGameHudMixin {
