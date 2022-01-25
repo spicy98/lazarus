@@ -3,7 +3,7 @@ package spicy.lazarus.commands.commands;
 import spicy.lazarus.Lazarus;
 import spicy.lazarus.commands.Command;
 import spicy.lazarus.modules.Module;
-import spicy.lazarus.utils.ChatUtils;
+import spicy.lazarus.utils.client.ChatUtil;
 
 public class ToggleCommand extends Command {
     public ToggleCommand() {
@@ -17,7 +17,7 @@ public class ToggleCommand extends Command {
             Module module = Lazarus.moduleManager.getModule(args[0]);
             if(module != null) {
                 module.toggle();
-                ChatUtils.printInfo(args[0] + " " + module.getEnabled());
+                ChatUtil.printInfo(args[0] + " " + module.getEnabled());
                 return;
             } else {
                 sendUnknownModule(args[0]);

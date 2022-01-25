@@ -1,10 +1,10 @@
-package spicy.lazarus.utils;
+package spicy.lazarus.utils.client;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
-public class ChatUtils {
+public class ChatUtil {
     private static final Formatting GRAY = Formatting.GRAY;
     private static final Formatting DARK_AQUA = Formatting.DARK_AQUA;
     private static final Formatting RED = Formatting.RED;

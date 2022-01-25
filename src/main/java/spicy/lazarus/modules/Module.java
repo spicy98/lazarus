@@ -1,6 +1,7 @@
 package spicy.lazarus.modules;
 
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.util.InputUtil;
 import spicy.lazarus.Lazarus;
 
 public class Module {
@@ -8,6 +9,7 @@ public class Module {
 
     private final String name, description;
     private boolean enabled;
+    private InputUtil.Key bind = null;
 
     public Module(String name, String description) {
         this.name = name;
@@ -20,6 +22,14 @@ public class Module {
 
     public String getName() {
         return this.name;
+    }
+
+    public void setBind(InputUtil.Key key) {
+        this.bind = key;
+    }
+
+    public InputUtil.Key getBind() {
+        return this.bind;
     }
 
     public boolean getEnabled() {

@@ -2,7 +2,7 @@ package spicy.lazarus.commands;
 
 import org.reflections.Reflections;
 import spicy.lazarus.Lazarus;
-import spicy.lazarus.utils.ChatUtils;
+import spicy.lazarus.utils.client.ChatUtil;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -84,6 +84,6 @@ public class CommandManager {
     }
 
     public static void sendUnknownCommand(String string) {
-        ChatUtils.printError("Invalid command '" + CommandManager.getPrefix() + string + "' Do " + CommandManager.getPrefix() + "help to see all commands.");
+        ChatUtil.printError("Invalid command '" + CommandManager.getPrefix() + string + "' Do " + CommandManager.getPrefix() + "help to see all commands.");
     }
 }

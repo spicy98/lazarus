@@ -1,8 +1,7 @@
 package spicy.lazarus.commands;
 
 import net.minecraft.client.MinecraftClient;
-import spicy.lazarus.Lazarus;
-import spicy.lazarus.utils.ChatUtils;
+import spicy.lazarus.utils.client.ChatUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,12 +62,12 @@ public abstract class Command {
     }
 
     public void sendInvalidSyntax(String alias) {
-        if (Arrays.asList(getAliases()).contains(alias)) ChatUtils.printError("Invalid syntax. Correct syntax is '" + getFullSyntax(alias) + "");
-        else ChatUtils.printError("Invalid syntax. Correct syntax is '" + getFullSyntax("") + "");
+        if (Arrays.asList(getAliases()).contains(alias)) ChatUtil.printError("Invalid syntax. Correct syntax is '" + getFullSyntax(alias) + "");
+        else ChatUtil.printError("Invalid syntax. Correct syntax is '" + getFullSyntax("") + "");
     }
 
     public void sendUnknownModule(String m) {
-        ChatUtils.printError("Module '" + m + "' found", Command.ERRORID);
+        ChatUtil.printError("Module '" + m + "' found", Command.ERRORID);
     }
 
     public abstract void exec(String[] args, String alias);
